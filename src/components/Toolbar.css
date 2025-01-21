@@ -1,0 +1,100 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Container for Toolbar */
+div {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* Toolbar Inputs */
+label {
+    display: inline-block;
+    font-size: 18px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+input[type="color"],
+input[type="number"] {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+input[type="color"]:hover,
+input[type="number"]:hover {
+    border-color: #aaa;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile View */
+@media (max-width: 480px) {
+    div {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    label {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    input[type="color"],
+    input[type="number"] {
+        font-size: 14px;
+        padding: 7px;
+    }
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    div {
+        padding: 18px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    label {
+        font-size: 17px;
+    }
+
+    input[type="color"],
+    input[type="number"] {
+        font-size: 15px;
+        padding: 8px;
+    }
+}

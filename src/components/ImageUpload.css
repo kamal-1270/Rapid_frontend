@@ -1,0 +1,89 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* Container for ImageUpload */
+div {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+/* File Input Style */
+input[type="file"] {
+    display: inline-block;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+input[type="file"]:hover {
+    background-color: #f0f0f0;
+}
+
+/* Image Display Style */
+img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Media Queries for Responsiveness */
+
+/* Mobile View */
+@media (max-width: 480px) {
+    div {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    input[type="file"] {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+}
+
+/* Tablet View */
+@media (max-width: 768px) {
+    div {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    input[type="file"] {
+        font-size: 15px;
+        padding: 11px 18px;
+    }
+}

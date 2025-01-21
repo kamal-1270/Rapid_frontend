@@ -1,0 +1,152 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f4f7fc;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  padding: 20px;
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Main Container */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Editor Styles */
+.editor-container {
+  margin-bottom: 20px;
+}
+
+.editor-container input,
+.editor-container textarea {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+}
+
+.editor-container input[type="text"] {
+  width: 100%;
+}
+
+.editor-container textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.editor-container .editor-preview {
+  border-top: 2px solid #ddd;
+  padding-top: 20px;
+  margin-top: 20px;
+  background-color: #f9f9f9;
+}
+
+/* Image Upload */
+.image-upload-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.image-upload-container input[type="file"] {
+  display: inline-block;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.image-upload-container button {
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .App {
+      padding: 15px;
+  }
+
+  h1 {
+      font-size: 24px;
+  }
+
+  button {
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+  }
+
+  .editor-container input,
+  .editor-container textarea {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  .image-upload-container input[type="file"] {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .App {
+      padding: 10px;
+  }
+
+  h1 {
+      font-size: 20px;
+  }
+
+  button {
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  .editor-container input,
+  .editor-container textarea {
+      font-size: 12px;
+      padding: 8px;
+  }
+}
