@@ -11,7 +11,7 @@ const App = () => {
     const navigate = useNavigate(); // Correct useNavigate hook
 
     const fetchHtmlContent = async () => {
-        const response = await fetch('http://localhost:5000/api/email/getEmailLayout');
+        const response = await fetch('https://rapid-backend1.onrender.com/api/email/getEmailLayout');
         const html = await response.text();
         setHtmlContent(html);
     };
@@ -22,7 +22,7 @@ const App = () => {
             return;
         }
 
-        fetch('http://localhost:5000/api/email/uploadEmailConfig', {
+        fetch('https://rapid-backend1.onrender.com/api/email/uploadEmailConfig', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
